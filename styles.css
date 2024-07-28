@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Silkscreen:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Silkscreen:wght@400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    --color-principal: #0a0007;
+    --color-secundario: #1D0036;
+    --color-terciario: #800050;
+
+    --color-titulares: #F50D41; 
+    --color-destacados: #cccdff;
+    --color-parrafos: #fffbfb;
+
+
+    --fuente-titulares: "Silkscreen", sans-serif;
+    --fuente-parrafos: "Titillium Web", sans-serif;
+
+    --size-titulares: 5.5rem;
+    --size-destacados: 1.5rem;
+    --size-parrafos:  1rem;
+
+    font-family: var(--fuente-parrafos);
+
+    
+
+}
+.menu {
+    background-color: var(--color-terciario);
+    
+
+}
+.menu_principal {
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_principal_enlace {
+    color: var(--color-parrafos);
+    text-decoration: none;
+    font-family: var(--fuente-titulares);
+
+}
+
+.principal {
+    padding: 5rem;
+    background-color: var(--color-principal);
+    color: var(--color-parrafos);
+
+}
+
+.principal_bienvenida {
+
+    padding: 1.5rem;
+    margin: 2rem;
+
+
+}
+
+.principal_bienvenida_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principal_bienvenida_titulares {
+    font-family: var(--fuente-titulares);
+    font-size: var(--size-titulares);
+    text-align: center;
+    
+    
+}
+
+.principal_bienvenida_h2_titulo {
+    padding: 2rem;
+    font-family: var(--fuente-titulares);
+    font-size: var(--size-destacados);
+    text-align: center;
+    color: var(--color-terciario);
+}
+
+.enganche {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: var(--fuente-titulares);
+}
