@@ -31,17 +31,16 @@ body {
 
     font-family: var(--fuente-parrafos);
     background-color: var(--color-principal);
-
-    
-
 }
+
+
+
 .menu {
     background-color: var(--color-terciario);
     
 
 }
 .menu_principal {
-    
     height: 5rem;
     display: flex;
     flex-direction: row;
@@ -50,9 +49,15 @@ body {
 }
 
 .menu_principal_enlace {
+    padding: 3rem;
     color: var(--color-parrafos);
     text-decoration: none;
     font-family: var(--fuente-titulares);
+}
+
+.menu_principal_enlace:hover {
+    background-color: var(--color-secundario);
+
 
 }
 
@@ -84,6 +89,7 @@ body {
     
 }
 
+
 .principal_bienvenida_h2_titulo {
     padding: 2rem;
     font-family: var(--fuente-titulares);
@@ -94,6 +100,7 @@ body {
 
 .principal_bienvenida_imagen {
     width: 100%;
+    height: auto;
 
 }
 
@@ -110,13 +117,12 @@ body {
 
 .catalogo {
     padding: 2.5rem;
-
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
-
 }
 
 .catalogo_cards {
@@ -125,25 +131,102 @@ body {
     text-align: center;
     opacity: 0.6;
     transition: width 0.6s, opacity 1s;
-    
-    
-
-
 }
+
+
 
 .catalogo_cards_imagen {
     width: 100%;
+    height: auto;
+
     border-radius:5%;
-
-    
-    
-
-    
-
 }
 
 .catalogo_cards:hover {
     width: 27%;
     opacity: 1;
+}
+
+
+.catalogo_cards_h3_titulo {
+    padding: 1rem;
+
+}
+.menu_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--color-secundario);
+    color: var(--color-parrafos);
+    text-align: center;
+}
+
+/* Media Querys */
+@media only screen and (max-width: 916px)  {
+
+    body {
+        --size-titulares: 2.3rem;
+        --size-destacados: 1.2rem;
+        --size-parrafos:  1rem;
+    }
+    .menu_principal_enlace {
+        padding: 0.7rem ;
+    }
+    .catalogo {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .catalogo_cards {
+        height: auto;
+    }
+
+    .menu_principal {
+        flex-direction: column;
+        padding: 1rem;
+        height: 8rem;
+    }
+
+    .principal {
+        padding: 1rem;
+    }
+
+
+    .principal_bienvenida {
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+    
+
+    .principal_bienvenida_h2_titulo {
+        padding: 1rem;
+    }
+
+    .enganche {
+        padding: 1rem;
+        text-align: center;
+        
+
+    }
+
+    .catalogo {
+        padding: 1rem;
+    }
+
+    .catalogo_cards {
+        width: 100%;
+        height: auto;
+    }
+
+    .catalogo_cards:hover {
+        width: 95%;
+        
+    }
+
+    
+
+
+
 
 }
